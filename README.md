@@ -1,1 +1,1 @@
-## React Application Starter
+## React Application
