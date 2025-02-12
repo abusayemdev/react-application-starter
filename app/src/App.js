@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
+import Fruits from './components/Props';
+import StateClass from './components/State';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <header className="App-header">
         <FunctionalComponent/>
         <ClassComponent/>
+        <Fruits name="Apple" color="Red"/>
+        <StateClass/>
        
       </header>
     </div>
