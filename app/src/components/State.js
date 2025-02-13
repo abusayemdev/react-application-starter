@@ -16,12 +16,27 @@ class StateClass extends Component{
             ]
         }
     }
+
+//State manipulating
+    changeColor = () => {
+        this.setState({
+          fruits: [
+            { name: 'Apple', color: 'Green' },  // Change Apple color
+            { name: 'Mango', color: 'Orange' }, // Change Mango color
+          ],
+        });
+    }
+
+
     
     render() {
         return (
             <div>
-                <h1>I love {this.state.fruits[0].name}. The color of {this.state.fruits[0].name} is {this.state.fruits[0].color}.</h1>;
-                <h1>I love {this.state.fruits[1].name}. The color of {this.state.fruits[1].name} is {this.state.fruits[1].color}.</h1>;
+                <h1>I love {this.state.fruits[0].name}. The color of {this.state.fruits[0].name} is {this.state.fruits[0].color}.</h1> 
+                <h1>I love {this.state.fruits[1].name}. The color of {this.state.fruits[1].name} is {this.state.fruits[1].color}.</h1>
+             
+                <button onClick={this.changeColor}>Change Colors</button>
+            
             </div>
 
         )
