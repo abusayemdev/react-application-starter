@@ -5,6 +5,7 @@ import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
 import Fruits from './components/Props';
 import StateClass from './components/State';
+import UseFruitState from './components/useState';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <ClassComponent/>
         <Fruits name="Apple" color="Red"/>
         <StateClass/>
+        <UseFruitState/>
        
       </header>
     </div>
